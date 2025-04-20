@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陳霈慈的課程作品</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--deep-blue);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: var(--accent-bg);">世新 資傳生</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">關於我</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">課程作品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com/acfilms_1081208?utm_medium=copy_link" target="_blank">
+                攝影帳
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:chenalice98073@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <section class="section">
+      <h1>關於我</h1>
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <p>
+            我是來自世新大學資傳系的應屆畢業生-陳霈慈，修了多門與使用者體驗、網站開發、AI應用相關等等的課程與專案。
+          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="陳霈慈照片.jpg" class="chen img-fluid" alt="陳霈慈照片" >
+        </div>
+      </div>
+  </section>
+  
+  
+  <section class="section" id="projects">
+    <h1>課程作品</h1>
+    <div class="card-grid">
+
+      <div class="exp-card">
+      <h3 class="course-title">花Happen 畢業專題</h3>
+      <p class="course-sub">#AI網站開發、#AI聊天機器人</p>
+      <button class="toggle-btn" onclick="showModal('flower-happen')">查看更多</button>
+      </div>
+
+      <div class="exp-card">
+        <h3 class="course-title">《網站規劃與設計》</h3>
+        <p class="course-sub">＃高中生為客群優化</p>
+        <button class="toggle-btn" onclick="showModal('website')">查看更多</button>
+      </div>
+
+      <div class="exp-card">
+        <h3 class="course-title">《專題二提案》</h3>
+        <p class="course-sub"># 解決需求 #提醒APP設計</p>
+        <button class="toggle-btn" onclick="showModal('info-app')">查看更多</button>
+      </div>
+
+      <div class="exp-card">
+        <h3 class="course-title">《資訊資源與組織》</h3>
+        <p class="course-sub"># 給予建議 # 創作者AI平台</p>
+        <button class="toggle-btn" onclick="showModal('info-resources')">查看更多</button>
+      </div>
+
+      <div class="exp-card">
+        <h3 class="course-title">《使用者研究與服務設計》</h3>
+        <p class="course-sub"># iRent APP易用性測試</p>
+        <button class="toggle-btn" onclick="showModal('user-research')">查看更多</button>
+      </div>
+  
+      <div class="exp-card">
+        <h3 class="course-title">《大一網頁設計》</h3>
+        <p class="course-sub">#Github #網站自傳介紹</p>
+        <button class="toggle-btn" onclick="showModal('info-introuduction')">查看更多</button>
+      </div>
+
+      <!--<div class="exp-card">
+        <h3 class="course-title">《人工智慧與傳播科技應用》</h3>
+        <p class="course-sub"># AI條漫、動畫</p>
+        <button class="toggle-btn" onclick="showModal('ai-applications')">查看更多</button>
+      </div>
+  
+      <div class="exp-card">
+        <h3 class="course-title">《數位內容產製規劃與提案》</h3>
+        <p class="course-sub"># AI、# 虛擬提案</p>
+        <button class="toggle-btn" onclick="showModal('digital-content')">查看更多</button>
+      </div>-->
+    </div>
+  </section>
+  
+  <!-- Modal 視窗 -->
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal()"></div>
+
+  
+  <div class="modal" id="modal-flower-happen" style="max-height:85vh">
+    <h3 style="text-align: center;">花Happen 畢業專題</h3>
+    <p>從Figma主視覺開始，到用HTML、CSS搭建網站，再搭配Courser.ai、Claude.ai與ChatGPT開發網站功能，像是串接ChatGPT API製作AI花卉對話機器人（在後台下Prompt限制AI只能回答花卉有關的問題）、切花資料卡片。雖然我不擅長也不熟悉JavaScript，但透過AI的幫助，得到了很多協助。</p>
+    <p>除了網站開發，我也參與資料蒐集、美術溝通與攝影。像是切花資料我會特別以書本資料為主，網路為輔進行搜集；圖片則用Midjourney生成來保持風格一致，也解決季節問題。而我也與美術設計進行視覺設計的溝通，讓美術設計能達到一定的專業性，因而拿下了美術設計獎。最後觀展時也收到很多正向的回饋，對我來說是很大的鼓勵。</p>
+    <p>目前網站已下架。Pdf檔只截取開發及設計介紹。</p>
+    <div class="flowerhappenpicture">
+      <div class="preview"style="text-align:center;">
+      <h4>示意圖－擷取結案報告</h4>
+        <a class="alink" style="padding: 10px;" href="https://www.figma.com/proto/urjwBWh0Nb3LfGTLPnHEka/%E8%8A%B1Happen%E7%B6%B2%E9%A0%81%E7%A4%BA%E6%84%8F?node-id=1-12&p=f&t=dwfkm8rtlQulsH7P-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A12&show-proto-sidebar=1" target="_blank">Fimga Wireframe Prototype</a> 
+        <iframe src="https://drive.google.com/file/d/1daHc31HGKmrSSvZsHqvj-hkc13w1NJwd/preview"  allow="autoplay"  class="pdf"></iframe>
+      </div>
+    </div>
+    <button class="modal-btn" onclick="closeModal()">關閉</button>
+  </div>
+
+  <div class="modal"style="max-height:85vh" id="modal-website">
+    <h3 style="text-align: center;">《網站規劃與設計》</h3>
+    <p>透過公司實際案例分析的再報告，瞭解其公司進行UI/UX優化的研究方式，像是顧客旅程圖。</p>
+    <p>期末專案我們選擇「世新大學圖文傳播學系」網站為研究對象，以高中生為目標族群，重新設計部分介面。與組員分析後，使用Figma重構頁面、優化版面邏輯，新增活動照片與設備介紹，提升系所對高中生的吸引力。</p>
+    <div class="preview"style="text-align:center;">
+    <h4>提案：第6頁至第14頁為優化前後說明</p>
+    <a class="alink" href="https://www.figma.com/proto/b1fLbjZf0Fe1dbSIdQ20UF/%E4%B8%96%E6%96%B0%E5%9C%96%E5%82%B3%E5%AE%98%E7%B6%B2%E7%B5%A6%E9%AB%98%E4%B8%AD%E7%94%9F%E4%BD%BF%E7%94%A8%E7%9A%84%E9%A0%81%E9%9D%A2?node-id=1-2&t=fcinJRQ08yrVoOPv-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank">Fimga Prototype</a> 
+    <a class="alink" href="https://www.figma.com/design/b1fLbjZf0Fe1dbSIdQ20UF/%E4%BB%A5%E9%AB%98%E4%B8%AD%E7%94%9F%E7%82%BA%E5%AE%A2%E7%BE%A4%E5%84%AA%E5%8C%96%E4%B8%96%E6%96%B0%E5%9C%96%E5%82%B3%E5%AE%98%E7%B6%B2?node-id=658-789&t=Ey5MD3dljoYmXvxa-1" target="_blank">Fimga 編輯介面</a>  
+    <iframe src="https://drive.google.com/file/d/1d2dxivG8sgxxulHyIBNo-DxmTS_FXeAI/preview" allow="autoplay"  class="pdf"></iframe>
+  </div>
+    <button class="modal-btn" onclick="closeModal()">關閉</button>
+  </div>
+  </div>
+  
+  <div class="modal" style="max-height:70vh" id="modal-user-research">
+    <h3 style="text-align: center;">《使用者研究與服務設計》</h3>
+    <p>針對iRent APP進行使用者訪談和易用性測試，並透過SUS量表分析實際操作的痛點，提出具體優化建議書。</p>
+    <div class="preview"style="text-align:center;">
+    <h4>第11頁至第17頁為痛點與建議</h4>
+      <iframe src="https://drive.google.com/file/d/1p2CyzMEnx40Gd9DNyuLPa2h1bm9kWVSw/preview"allow="autoplay" class="pdf"></iframe>
+    </div>
+    <button class="modal-btn" onclick="closeModal()">關閉</button> 
+  </div>
+  
+  <div class="modal" style="max-height:85vh" id="modal-info-app">
+    <h3 style="text-align: center;">《專題二提案》</h3>
+    <p>學習解決需求進行提案：提醒APP，製作成Figma Wireframe示意。Pdf檔只截取設計介紹。</p>
+    <div class="preview"style="text-align:center;">
+      <a class="alink"  href="https://www.figma.com/proto/mKdbx4REMvIngokYcL3RP7/%E6%8F%90%E9%86%92app%E4%BB%8B%E9%9D%A2?node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&t=5rifRRLDwisy0HIK-1" target="_blank">Fimga Wireframe Prototype</a> 
+      <a class="alink"  href="https://www.figma.com/design/mKdbx4REMvIngokYcL3RP7/%E6%8F%90%E9%86%92app%E4%BB%8B%E9%9D%A2?node-id=0-1&t=R90WrMSXlxg1mC7b-1" target="_blank">Fimga 編輯介面</a>  
+      <iframe src="https://drive.google.com/file/d/1jWQdV-aCnR6D-cGv8stQ5CgORdfZZpOS/preview" allow="autoplay"  class="pdf"></iframe>  
+    </div>
+    <button class="modal-btn" onclick="closeModal()">關閉</button>
+  </div>
+
+  <div class="modal" style="max-height: 85vh; overflow-y: auto;" id="modal-info-resources">
+    <h3 style="text-align: center;">《資訊資源與組織》</h3>
+  
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active text-secondary" id="report1-tab" data-bs-toggle="tab" data-bs-target="#report1" type="button" role="tab" aria-controls="report1" aria-selected="true">
+          創作者生成式 Ai 資源整合平台
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-secondary" id="report2-tab" data-bs-toggle="tab" data-bs-target="#report2" type="button" role="tab" aria-controls="report2" aria-selected="false">
+          優化食農教育建議
+        </button>
+      </li>
+    </ul>
+    
+  
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="report1" role="tabpanel" aria-labelledby="report1-tab">
+        <h4 style="padding-top: 20px;">創作者生成式Ai資源整合平台Wireframe</h4>
+        <p>根據課程製作一個方便、易於尋找和分享 AI 相關資源的社區平台提案。不僅提供了一個集中的資源庫，還能促進了教學資源的共享和交流。</p>
+        <div class="preview" style="text-align:center;">
+          <a class="alink" href="https://www.figma.com/proto/pvpatc2BHV95QJkfm35z9M/%E5%89%B5%E4%BD%9C%E8%80%85ai?node-id=3-2&p=f&t=Sb8ucaz1p2XJJZ8G-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A2&show-proto-sidebar=1" target="_blank">Fimga Wireframe Prototype</a> 
+          <iframe src="https://drive.google.com/file/d/1NtCsSxPoK3_6KHkp_xhiRFKZ8HXVlmgL/preview" allow="autoplay" class="pdf"> </iframe>
+        </div>
+      </div>
+        <div class="tab-pane fade" id="report2" role="tabpanel" aria-labelledby="report2-tab">
+        <h4 style="padding-top: 20px;">優化食農教育網站的建議</h4>
+        <p>針對「食農教育資訊整合平台」做網站分析與服務建議書，我們提出頁面結構整理、導覽分類與SEO優化的建議，最後有將近七成被該平台實際採用，這讓我對使用者經驗優化產生成就感與信心。</p>
+        <div class="preview" style="text-align:center;">
+          <iframe src="https://drive.google.com/file/d/1Cq_IyqdEJ20Cza2bjKD-iTNAMGuy9d01/preview" allow="autoplay" class="pdf"></iframe>
+          <a class="alink" href="https://fae.moa.gov.tw/">「食農教育資訊整合平台官網」</a>
+        </div>
+      </div>
+    </div>
+    <button class="modal-btn" onclick="closeModal()">關閉</button>
+  </div>
+
+    <div class="modal" style="max-height:40vh" id="modal-info-introuduction">
+      <h3 style="text-align: center;">《大一網頁設計》</h3>
+      <p>利用Html、Css跟Bootstrap製作的個人自傳網站，內容多包括攝影照片。</p>
+      <div class="preview"style="text-align:center;">
+        <a class="alink"  href="https://aliceblue98073.github.io/index.html" target="_blank">網站連結</a> 
+      </div>
+      <button class="modal-btn" onclick="closeModal()">關閉</button>
+    </div>
+
+  </div>
+  
+
+  <!--<div class="modal" style="max-height:45vh" id="modal-ai-applications">
+    <h3 style="text-align: center;">《人工智慧與傳播科技應用》</h3>
+    <p>團隊大量使用AI工具做作品，像是用Skyreels生成AI漫畫、用Figma排版成條漫，也嘗試用Haiper、剪映、Suno製作動畫與音樂。</p>
+    <div class="preview"style="text-align:center;">
+      <a class="alink" style="padding: 10px;" href="https://youtu.be/RSYyiq3h8aw" target="_blank">Youtube動畫影片</a> 
+      <a class="alink" style="padding: 10px;" href="https://ppt.cc/fThy6x" target="_blank">條漫</a>  
+      </div>
+    <button class="modal-btn" onclick="closeModal()">關閉</button>
+  </div>
+  
+  <div class="modal" style="max-height:45vh" id="modal-digital-content">
+    <h3 style="text-align: center;">《數位內容產製規劃與提案》</h3>
+    <p>那次提出一個以AI為主的虛擬產品「隨行影棚」，整合曲面螢幕、棚燈與AI助理，讓使用者能透過APP調整場景與燈光。</p>
+    <button class="modal-btn" onclick="closeModal()">關閉</button>
+  </div> 0-->
+
+  <footer>
+    <div class="footer">
+    <div class="p-0 mb-0">
+    <br>
+    <p class="p-0" style="text-align: center;">@Chen Pei Ci 自 我 介 紹 的 網 站</p>
+    <br>
+    </div>  
+    </div>
+    </footer>
+
+  <script>
+
+    function showModal(modalId) {
+      document.getElementById(`modal-${modalId}`).style.display = 'block';
+      document.getElementById('modal-overlay').style.display = 'block';
+    }
+  
+    function closeModal() {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => modal.style.display = 'none');
+      document.getElementById('modal-overlay').style.display = 'none';
+    }
+
+  </script>
+  
+
+</body>
+</html>
