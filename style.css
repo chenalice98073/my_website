@@ -234,3 +234,16 @@ ul {
   background-color: var(--deep-blue); 
   color: var(--accent-bg);
 }
+
+.IG{
+  justify-content: center;
+  color: #189498;
+  padding-right: 15px;
+}
+.IG:hover{
+    color: #9dbd85;
+}
+.IGCenter{
+  text-align: center;
+  padding-bottom: 25px;
+}
